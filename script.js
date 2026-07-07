@@ -13,7 +13,7 @@ const API_URL = 'https://api.groq.com/openai/v1/chat/completions';
 let conversationHistory = [
  {
   role: 'system',
-  content: "Sizning ismingiz ZyroAi. Siz aqlli va foydali sun'iy intellektsxiz. ",
+  content: "Sizning ismingiz Gemini. Siz aqlli va foydali sun'iy intellektsxiz. ",
  },
 ];
 
@@ -34,7 +34,7 @@ function displayMessage(sender, text) {
  } else {
   msgDiv.style.backgroundColor = '#f5f5f5'; // AI xabari (kulrang)
   msgDiv.style.marginRight = 'auto'; // Chap tomonda qolishi
-  msgDiv.innerHTML = `<strong>ZyroAi:</strong> <br>${text}`; // TUZATILDI: Backtick ishlatildi
+  msgDiv.innerHTML = `<strong>Gemini:</strong> <br>${text}`; // TUZATILDI: Backtick ishlatildi
  }
 
  chatMessages.appendChild(msgDiv);
